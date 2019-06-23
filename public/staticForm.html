@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+   <head>
+      <meta charset="utf-8">
+      <title>Postage Calculator</title>
+      <link rel="stylesheet" type="text/css" href="project09.css.">
+   </head>
+  
+   <body>
+      <h1>Postage Calculator</h1>                                        
+      <form id="form1" action="/getRate" method="post">
+         <table>
+            <tr>
+               <td>
+                  Enter the weight of your package:
+               </td>
+               <td>
+                  <input type="number" name="weight">
+               </td>
+            <tr>
+               <td>
+                  Type of mail:
+               </td>
+               <td>
+                  <select name="mailType">
+                     <option value="stamp"> Stamped Letter </option>
+                     <option value="meter"> Metered Letter </option>
+                     <option value="envelopes"> Large Flat Envelopes </option>
+                     <option value="retail"> First-Class Package Service &mdash; Retail </option>
+                  </select>
+               </td>
+            </tr>
+         </table>
+         <input type="submit">
+      </form>
+   </body>
+</html>
